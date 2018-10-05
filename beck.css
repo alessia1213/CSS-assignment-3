@@ -1,0 +1,79 @@
+/*  ADD your styles below --- WHERE INDICATED ---
+    Keep all the comments I have provided.
+    Where I have commented "keep," DO NOT touch that line!
+    */
+
+body {
+    background: #6371E1; /* must change */
+    color: #000; /* may be #000 or #fff */
+    font-family: Calibri, Arial, sans-serif; /* keep */
+}
+
+article {
+    width: 800px; /* keep */
+    padding: 20px; /* keep */
+    margin: auto; /* keep */
+    border: 1px solid; /* can delete or change */
+}
+
+/* --- ADD YOUR STYLES BELOW --- */
+header {
+    background: #20D1E5; /* must change */
+    color: #000; /* may be #000 or #fff */
+    font-family: Calibri, Arial, sans-serif; /* keep */
+}
+footer {
+    background: #20D1E5; /* must change */
+    color: #000; /* may be #000 or #fff */
+    font-family: Calibri, Arial, sans-serif; /* keep */
+}
+article {
+    background: #1482FF ; /* must change */
+    color: #000; /* may be #000 or #fff */
+    font-family: Calibri, Arial, sans-serif; /* keep */
+}
+aside {
+    background: #6371E1  ; /* must change */
+    color: #000; /* may be #000 or #fff */
+    font-family: Calibri, Arial, sans-serif; /* keep */
+}
+figure {
+    background: #0CB3F5  ; /* must change */
+    color: #000; /* may be #000 or #fff */
+    font-family: Calibri, Arial, sans-serif; /* keep */
+}
+/* --- add your PSEUDO CLASSES below this line --- */
+
+/*  ------------ color list ----------
+    20D1E5   ocean teal
+    1482FF   medium blue
+    0CB3F5   sky blue
+    6371E1  light purple
+    000     black
+*/
+
+/*---------- psuedo classes order-------
+a:link {   }
+a:visited{   }
+a:focus {   }
+a:hover {   }
+a:active {   }
+*/
+
+a:link{color: #00127F;}
+a:visited{color:#068DFF;}
+a:focus{color:#020005;}
+a:hover{ color:#1F02FF;}
+a:active{color:#FFF;}
+
+.one { background: #20D1E5; }
+.two { background:#1482FF ; }
+.three { background:#0CB3F5; }
+.four { background:#6371E1; }
+.five{ background:#000; }
+
+.one1 { color: #00127F; }
+.two2{ color:#068DFF; }
+.three3 { color:#020005; }
+.four4 { color:#1F02FF; }
+.five5 { color:#F2D3AC; }
