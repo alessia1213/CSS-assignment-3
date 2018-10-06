@@ -8,16 +8,20 @@ html {
     box-sizing: inherit; /* keep */
 }
 body {
-    font-family: sans-serif;
+    font-family: "Open Sans",'Geneva', sans-serif;
     background: #5598b2; /* keep */
     color: #333; /* keep */
     margin: 0; /* keep */
 }
+
+
+
 h1, h2 {
-    font-family: serif;
+    font-family: "PT Serif", 'Times New Roman','Times', serif;
 }
 #tagline {
     font-style: italic;
+    text-align: center;
 }
 /* all images will stretch to fill their containing element */
 img {
@@ -33,15 +37,21 @@ img {
     */
 
 /* grid container */
+
 #container {
     max-width: 1280px; /* keep */
     margin: auto; /* keep */
     display: grid; /* keep */
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(7,auto);
     grid-template-areas:
-        "header arial georgia pairing bobwhite-quail"
-        "readability line-length helvetica typeface footer";
+         "header header header header header"
+         "pairing pairing pairing arial georgia"
+         "bobwhite-quail bobwhite-quail readability readability readability"
+         "bobwhite-quail bobwhite-quail  line-length line-length line-length"
+         "typeface typeface typeface helvetica helvetica"
+         "typeface typeface typeface . ."
+         "footer footer footer footer footer";
 }
 
 /* all grid items -
@@ -52,44 +62,78 @@ img {
 
 header {
     grid-area: header; /* keep */
+    text-align: center;
+    padding: 50px;
+    font-size: 1.8rem;
     background: #fff; /* keep */
 }
 #arial {
     grid-area: arial; /* keep */
     background: #a8e8ff; /* keep */
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 30%;
+    padding-bottom:20%;
+    font-size: 1rem;
 }
 #georgia {
     grid-area: georgia; /* keep */
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 30%;
+    padding-bottom:20%;
+    font-size: 1rem;
     background: #a8e8ff; /* keep */
 }
 #pairing {
     grid-area: pairing; /* keep */
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 10%;
+    padding-bottom:20%;
+    margin: 0;
+    font-size: 1.2rem;
     background: #a8e8ff; /* keep */
 }
 #bobwhite-quail {
     grid-area: bobwhite-quail; /* keep */
+    padding: 50px;
+    padding-top: 100px ;
+    font-size: 1rem;
     background: #d2f4ff; /* keep */
 }
 #readability {
     grid-area: readability; /* keep */
+    padding: 50px;
+    font-size: 1.2rem;
     background: #d2f4ff; /* keep */
 }
 #line-length {
     grid-area: line-length; /* keep */
+    padding: 50px;
+    font-size: 1.2rem;
     background: #d2f4ff; /* keep */
 }
 #helvetica {
     grid-area: helvetica; /* keep */
+    padding: 70px 30px;
+    margin-top: 100px;
     background: #fff; /* keep */
 }
 #typeface {
     grid-area: typeface; /* keep */
     color: #d2f4ff; /* keep */
     background: #5598b2; /* keep */
+    text-shadow: .1em .5em 2em #000;
+    font-size: 1.2rem;
+    padding: 70px;
 }
 footer {
     grid-area: footer; /* keep */
     background: #b2988a; /* keep */
+    font-size: 1rem;
+    padding: 10px;
+    text-align: center;
 }
 
 /* end of all 10 grid items */
@@ -105,3 +149,78 @@ a:hover {
 }
 
 /* media queries below - only 1 is needed */
+@media screen and (max-width: 550px){
+    #container{
+      grid-template-columns: repeat(2,1fr);
+      grid-template-rows: repeat(9,auto);
+      grid-template-areas:
+           "header header"
+           "arial georgia"
+           "pairing pairing"
+           "bobwhite-quail bobwhite-quail"
+           "readability readability"
+           "line-length line-length"
+           "typeface typeface"
+           "helvetica helvetica"
+           "footer footer";
+    }
+  header{
+    padding : 1.8rem;
+  }
+  header img{
+    display: none;
+  }
+
+
+  #arial {
+    padding-right: .5rem;
+    padding-left: .5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+  }
+  #georgia{
+    padding-right: .5rem;
+    padding-left: .5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  #pairing{
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+  }
+  #bobwhite-quail{
+    padding-right: .5rem;
+    padding-left: .5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  #readability{
+    padding-right: .5rem;
+    padding-left: .5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  #line-length{
+    padding-right: .5rem;
+    padding-left: .5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  #helvetica{
+    padding: 1rem;
+    margin:0;
+  }
+  #typeface{
+    padding: 1rem;
+
+  }
+  footer{
+    text-align: left;
+    padding : 1rem;
+
+  }
+}
